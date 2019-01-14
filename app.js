@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongo = require('mongojs');
-const db = mongo('<name of database>', ['<name of collection>']);
+const db = mongo('catalogue', ['products']); // first parameter is name of DB and 2nd parameter is name of collection
 const app = express();
 const port = 3000;
 
